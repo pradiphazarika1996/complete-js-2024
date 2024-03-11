@@ -21,3 +21,44 @@
 //     }
     
 // }
+
+
+const number = [1,2,3,4,5,6,7,8];
+
+//  number.forEach((val)=>{
+//     console.log(val);
+// })
+// console.log(res);
+
+// for (const val of number) {
+//   console.log(val);
+    
+// }
+
+// for (const val in number) {
+//    console.log(val);
+// }
+
+// number.map((val)=>{
+//     console.log(val);
+// })
+// const res = number.filter((val)=> val>4)
+// console.log(res);
+
+// const res = number.filter((val)=>{
+//   return  val > 5
+
+// })
+// console.log(res);
+
+// number.reduce((val)=>{
+//     if(val>4){
+//         console.log(val);
+//     }
+// })
+
+// const initialValue = 0;
+// const sum = number.reduce((acc,currentValue)=> acc + currentValue, initialValue
+// )
+
+// console.log(sum);
