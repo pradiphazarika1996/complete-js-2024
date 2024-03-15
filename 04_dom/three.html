@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body style="background-color: #212121; color: #FFF;">
+    <div class="parent">
+        <li>Javascript</li>
+    </div>
+
+    <script>
+      
+      function addLang(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.parent').appendChild(li)
+
+
+      }
+      addLang('python')
+    
+
+      function addOptiLanguage(langName){
+      const li =  document.createElement('li');
+      li.appendChild(document.createTextNode(langName))
+      document.querySelector('.parent').appendChild(li)
+
+      }
+
+      addOptiLanguage("html")
+      addOptiLanguage("golang")
+
+
+    //   edit
+
+   const secondLang =   document.querySelector("li:nth-child(2)")
+  const newLi =  document.createElement('li')
+  newLi.textContent = "mojo"
+  secondLang.replaceWith(newLi)
+
+  const firstChild = document.querySelector("li:first-child")
+  firstChild.outerHTML = `<li>Typescript</li>`
+
+//   remove
+
+const removeLi = document.querySelector("li:last-child")
+removeLi.remove();
+    </script>
+</body>
+</html>
