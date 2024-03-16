@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+ 
+    <div>
+        <ul id="images">
+            <li><img height="80px" width="100px" src="https://fl-i.thgim.com/public/books/xisqu4/article67134564.ece/alternates/FREE_1200/Barn%20Owl%20%28in%20Gurgaon%29%20-%20had%20saves%20Chengiz%20Khan.jpg" alt="" srcset="" id="owl"> Owl</li>
+            <li> <img src="https://previews.123rf.com/images/miloushek/miloushek1011/miloushek101100013/8261073-computer-set.jpg" alt="" srcset="" height="80px" width="100px" id="computer">Computer</li>
+            <li> <img src="https://as1.ftcdn.net/v2/jpg/02/77/13/70/1000_F_277137082_UoYzeK9u2eQp7mE7yI2WyFL68pEKrbdB.jpg" alt="" srcset="" height="80px" width="100px" id="river">river</li>
+            <li> <img src="https://img.freepik.com/free-photo/vibrant-collection-healthy-fruit-vegetables-generated-by-ai_24640-80425.jpg" alt="" srcset=""height="80px" width="100px" id="fruits">fruits</li>
+        </ul>
+    </div>
+</body>
+<script>
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName == 'IMG') {
+
+            const removeIt = e.target.parentNode
+            console.log(e.target.parentNode);
+            removeIt.remove();
+            
+        }
+
+       
+    }, false)
+
+  
+</script>
+</html>
